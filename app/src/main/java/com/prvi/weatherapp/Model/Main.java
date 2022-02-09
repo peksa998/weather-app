@@ -3,7 +3,7 @@ package com.prvi.weatherapp.Model;
 public class Main {
 
     private double temp;
-    private int feels_like;
+    private double feels_like;
     private double temp_min;
     private double temp_max;
     private int pressure;
@@ -20,11 +20,11 @@ public class Main {
         this.temp = temp;
     }
 
-    public int getFeels_like() {
+    public double getFeels_like() {
         return feels_like;
     }
 
-    public void setFeels_like(int feels_like) {
+    public void setFeels_like(double feels_like) {
         this.feels_like = feels_like;
     }
 

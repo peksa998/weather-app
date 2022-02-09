@@ -79,7 +79,7 @@ public class TodayWeatherFragment extends Fragment {
     }
 
     private void getWeatherInformation() {
-        compositeDisposable.add(mService.getWeatherByLatLng(String.valueOf(Common.current_location),
+        compositeDisposable.add(mService.getWeatherByLatLng(String.valueOf(Common.current_location.getLatitude()),
                 String.valueOf(Common.current_location.getLongitude()),
                 Common.APP_ID,
                 "metric")
@@ -104,7 +104,7 @@ public class TodayWeatherFragment extends Fragment {
                         txt_humidity.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getHumidity())).append(" %").toString());
                         txt_sunrise.setText(Common.convertUnixToHour(weatherResult.getSys().getSunrise()));
                         txt_sunset.setText(Common.convertUnixToHour(weatherResult.getSys().getSunset()));
-                        txt_geo_coord.setText(new StringBuilder("[").append(weatherResult.getCoord().toString()).append("]").toString());
+                        txt_geo_coord.setText(new StringBuilder(weatherResult.getCoord().toString()).toString());
 
                         // Display panel
                         weather_panel.setVisibility(View.VISIBLE);

@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="1"
                     android:layout_marginLeft="8dp"
-                    android:background="@+id/txt_wind"
+                    android:id="@+id/txt_wind"
                     android:text="Speed: 1 Deg: 1"></TextView>
 
             </TableRow>
@@ -112,7 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="1"
                     android:layout_marginLeft="8dp"
-                    android:background="@+id/txt_pressure"
+                    android:id="@+id/txt_pressure"
                     android:text="1013.75 hpa"></TextView>
 
             </TableRow>
@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="1"
                     android:layout_marginLeft="8dp"
-                    android:background="@+id/txt_humidity"
+                    android:id="@+id/txt_humidity"
                     android:text="100%"></TextView>
 
             </TableRow>
@@ -152,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="1"
                     android:layout_marginLeft="8dp"
-                    android:background="@+id/txt_sunrise"
+                    android:id="@+id/txt_sunrise"
                     android:text="11:00"></TextView>
 
             </TableRow>
@@ -172,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="1"
                     android:layout_marginLeft="8dp"
-                    android:background="@+id/txt_sunset"
+                    android:id="@+id/txt_sunset"
                     android:text="18:00"></TextView>
 
             </TableRow>
@@ -192,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="1"
                     android:layout_marginLeft="8dp"
-                    android:background="@+id/txt_geo_coord"
+                    android:id="@+id/txt_geo_coord"
                     android:text="[32.0, -81.0]"></TextView>
 
             </TableRow>
