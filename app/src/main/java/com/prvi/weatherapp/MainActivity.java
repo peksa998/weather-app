@@ -9,6 +9,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Looper;
+import android.util.Log;
 //import android.widget.Toolbar;
 import androidx.appcompat.widget.Toolbar;
 
@@ -16,6 +17,7 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.karumi.dexter.Dexter;
@@ -65,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 return;
                             }
+                            fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(MainActivity.this);
                             fusedLocationProviderClient.requestLocationUpdates(locationRequest, locationCallback, Looper.myLooper());
                         }
                     }
@@ -90,6 +93,10 @@ public class MainActivity extends AppCompatActivity {
                 setupViewPager(viewPager);
                 tabLayout = (TabLayout) findViewById(R.id.tabs);
                 tabLayout.setupWithViewPager(viewPager);
+
+                // Log
+                Log.d("Location", locationResult.getLastLocation().getLatitude() + "/" + locationResult.getLastLocation().getLongitude());
+
             }
         };
     }
