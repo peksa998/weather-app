@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub_Projects/weather-app/app/src/main/res/drawable/border.xml" value="0.2703125" />
+        <entry key="..\:/GitHub_Projects/weather-app/app/src/main/res/drawable/cell.xml" value="0.2703125" />
         <entry key="..\:/GitHub_Projects/weather-app/app/src/main/res/layout/activity_main.xml" value="0.18297101449275363" />
-        <entry key="..\:/GitHub_Projects/weather-app/app/src/main/res/layout/fragment_today_weather.xml" value="0.15885416666666666" />
+        <entry key="..\:/GitHub_Projects/weather-app/app/src/main/res/layout/fragment_today_weather.xml" value="0.4" />
       </map>
     </option>
   </component>
