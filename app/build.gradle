@@ -39,7 +39,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Play Services
-    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
     // Dexter
     implementation 'com.karumi:dexter:5.0.0'
     // Retrofit2
