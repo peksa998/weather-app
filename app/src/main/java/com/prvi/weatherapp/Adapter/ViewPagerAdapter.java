@@ -1,5 +1,6 @@
 package com.prvi.weatherapp.Adapter;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -31,6 +32,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         fragmentTitle.add(title);
     }
 
+    @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         return fragmentTitle.get(position);
